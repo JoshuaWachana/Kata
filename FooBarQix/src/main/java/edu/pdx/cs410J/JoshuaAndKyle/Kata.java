@@ -30,6 +30,10 @@ public class Kata {
       sb.append("Bar");
     }
 
+    if (number % 7 == 0) {
+      sb.append("Qix");
+    }
+
     for (char c: s.toCharArray()) {
       if (c == '3') {
         sb.append("Foo");
@@ -37,6 +41,10 @@ public class Kata {
   
       if (c == '5') {
         sb.append("Bar");
+      }
+
+      if (c == '7') {
+        sb.append("Qix");
       }
     }
 

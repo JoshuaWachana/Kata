@@ -27,6 +27,11 @@ public class KataTest
   }
 
   @Test
+  void compute2(){
+    assertThat(this.kata.compute("2"), equalTo("2"));
+  }
+
+  @Test
   void compute3(){
     assertThat(this.kata.compute("3"), equalTo("FooFoo"));
   }
@@ -79,6 +84,16 @@ public class KataTest
   @Test
   void compute53() {
     assertThat(this.kata.compute("53"), equalTo("BarFoo"));
+  }
+
+  @Test
+  void compute7() {
+    assertThat(this.kata.compute("7"), equalTo("QixQix"));
+  }
+
+  @Test
+  void compute21() {
+    assertThat(this.kata.compute("21"), equalTo("FooQix"));
   }
 
 }
