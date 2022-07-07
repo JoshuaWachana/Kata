@@ -19,12 +19,37 @@ public class Kata {
   }
 
   public String compute(String s) {
-    if(Integer.parseInt(s) == 3){
-      return "FooFoo";
-    } else if (Integer.parseInt(s) == 5) {
-      return "BarBar";
+    int number = Integer.parseInt(s);
+    StringBuilder sb = new StringBuilder();
+
+    if(number % 3 == 0){
+      sb.append("Foo");
+    } 
+    
+    if (number % 5 == 0) {
+      sb.append("Bar");
     }
 
-    return s;
+    for (char c: s.toCharArray()) {
+      if (c == '3') {
+        sb.append("Foo");
+      }
+  
+      if (c == '5') {
+        sb.append("Bar");
+      }
+    }
+
+    // if input string contains a 3, add Foo to our String
+    
+
+    if (sb.length() == 0) {
+      sb.append(s);
+    }
+
+    
+
+    // return our string from stringbuilder
+    return sb.toString();
   }
 }

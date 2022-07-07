@@ -32,8 +32,53 @@ public class KataTest
   }
 
   @Test
+  void compute4() {
+    assertThat(this.kata.compute("4"), equalTo("4"));
+  }
+
+  @Test
   void compute5(){
     assertThat(this.kata.compute("5"), equalTo("BarBar"));
+  }
+
+  @Test
+  void compute6() {
+    assertThat(this.kata.compute("6"), equalTo("Foo"));
+  }
+
+  @Test
+  void compute9() {
+    assertThat(this.kata.compute("9"), equalTo("Foo"));
+  }
+
+  @Test
+  void compute10() {
+    assertThat(this.kata.compute("10"), equalTo("Bar"));
+  }
+
+  @Test
+  void compute13() {
+    assertThat(this.kata.compute("13"), equalTo("Foo"));
+  }
+
+  @Test
+  void compute15() {
+    assertThat(this.kata.compute("15"), equalTo("FooBarBar"));
+  }
+
+  @Test
+  void compute33() {
+    assertThat(this.kata.compute("33"), equalTo("FooFooFoo"));
+  }
+
+  @Test
+  void compute51() {
+    assertThat(this.kata.compute("51"), equalTo("FooBar"));
+  }
+
+  @Test
+  void compute53() {
+    assertThat(this.kata.compute("53"), equalTo("BarFoo"));
   }
 
 }
